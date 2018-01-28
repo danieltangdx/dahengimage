@@ -1,0 +1,478 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DemoProject.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 247, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Demo.exe"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         183,IDC_STATIC,"Static",SS_BITMAP,6,7,47,47
+    LTEXT           "DemoProject 1.0 版",IDC_STATIC_DEMOV,60,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "北京大恒图像视觉有限公司 版权所有 (C) 2012",
+                    IDC_STATIC_COMP,60,35,180,19
+    DEFPUSHBUTTON   "确定",IDOK_ABOUT,190,7,50,21,WS_GROUP
+END
+
+IDD_DEMOPROJECT_DIALOG DIALOGEX 0, 0, 799, 488
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,0,0,628,22
+    LTEXT           "aaaaaaaaaaaaaa",IDC_STATIC_1,30,55,52,16,SS_SUNKEN
+    PUSHBUTTON      "保存模板",IDC_BTN_SAVEMODEL,311,456,64,27
+    PUSHBUTTON      "模板列表",IDC_BTN_MLIST,540,456,64,27
+    PUSHBUTTON      "定位到错误图像目录",IDC_BTN_ERRIMG,647,254,85,14,
+                    BS_LEFT
+    PUSHBUTTON      "定位到连续图像目录",IDC_BTN_GRABIMG,647,236,85,14,
+                    BS_LEFT
+    PUSHBUTTON      "定位到有胶囊图像目录",IDC_BTN_CAPIMG,647,272,85,14,
+                    BS_LEFT
+    PUSHBUTTON      "清空\r\n\r\n结果",IDC_BTN_CLRST,739,236,40,50,
+                    BS_MULTILINE
+    LISTBOX         IDC_LIST_RESULT,646,290,139,72,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    GROUPBOX        "本地图像测试区",IDC_STATIC_FILEBACK,633,3,164,465
+    CONTROL         "",IDC_STATIC_BCK,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE | WS_DISABLED,632,0,165,488
+    LTEXT           "模板列表",IDC_STATIC_MLIST,692,10,58,9,NOT WS_VISIBLE
+    LISTBOX         IDC_MODELLIST,652,24,124,207,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "新建模板",IDC_STATIC_KJ,666,249,90,81
+    LTEXT           "输入新模板名称：",IDC_STATIC_NEWNAME,678,262,69,16,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT1,683,282,59,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "创建",IDC_NEWMODEL,691,305,48,20
+    CONTROL         "",IDC_STATIC_IMG,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE | WS_DISABLED,788,0,11,488
+    PUSHBUTTON      "删除模板",IDC_BTN_DELETE,643,409,60,24
+    PUSHBUTTON      "设为默认",IDC_BTN_SETD,715,409,60,24,BS_MULTILINE
+    PUSHBUTTON      "测试图像",IDC_BTN_CTEST,309,331,64,27,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "加载当前模板",IDC_BTN_UPDMDL,465,456,64,27,BS_MULTILINE
+    LTEXT           "Current Model Name",IDC_STATIC_CMODEL,4,455,164,18
+    CTEXT           "\r\nCurrent Dll Version",IDC_STATIC_VERSION,656,472,114,
+                    12
+    LTEXT           "AA",IDC_STATIC_CURPATH,323,155,132,8,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_GROUP
+    PUSHBUTTON      "保存当前路模板",IDC_BTN_SAVESINGLEMODEL,235,456,64,27,
+                    BS_MULTILINE
+    LTEXT           "|\r\n|\r\n|",IDC_STATIC_SPLIT,302,459,8,26,WS_DISABLED
+    PUSHBUTTON      "一键检测",IDC_BTN_PARKOUR,174,456,50,22,BS_MULTILINE
+    LTEXT           "0000000000000000000000000000000000000000000000000000",
+                    IDC_STATIC_INFO,0,478,224,8
+    LTEXT           "File",IDC_STATIC_FILE,648,67,132,167,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Static",IDC_STATIC_DISK,646,374,139,98,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_CURPATH,648,18,138,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "L",IDC_BTN_LANGUAGE,611,451,14,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "I",IDC_BTN_INSP,611,468,14,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "退出",IDC_BTN_EXIT2,390,456,64,27
+    PUSHBUTTON      "OK",IDOK,187,399,50,25,NOT WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_STOPPERTYPE,679,451,71,154,CBS_DROPDOWNLIST | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_EXIT DIALOG DISCARDABLE  0, 0, 194, 33
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+FONT 12, "宋体"
+BEGIN
+    PUSHBUTTON      "加载并退出",IDC_BTN_LANDE,9,6,51,20
+    PUSHBUTTON      "直接退出",IDC_BTN_EXIT,72,6,51,20
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,135,6,51,20
+END
+
+IDD_DLG_START DIALOG DISCARDABLE  0, 0, 171, 62
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 10, "幼圆"
+BEGIN
+    CONTROL         158,IDC_STATIC_BACK,"Static",SS_BITMAP,0,0,171,75
+    LTEXT           "初始化中 请稍后.....",IDC_STATIC_LOADING,2,50,168,8
+END
+
+IDD_DLG_NEWMODEL DIALOG DISCARDABLE  0, 0, 187, 83
+STYLE WS_POPUP | WS_CAPTION
+FONT 10, "幼圆"
+BEGIN
+    PUSHBUTTON      "确定",IDC_BTN_CONFIRM,68,62,51,14
+    LTEXT           "请输入第一个模板名称",IDC_STATIC_N,17,19,148,8
+    EDITTEXT        IDC_EDIT_NAME,39,37,109,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_LANGUAGE DIALOG DISCARDABLE  0, 0, 278, 50
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+FONT 10, "Times New Roman"
+BEGIN
+    PUSHBUTTON      "EXIT",IDCANCEL,217,7,54,36
+    LTEXT           "Static",IDC_STATIC_1,7,7,54,36,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_DLG_INSP DIALOG DISCARDABLE  0, 0, 278, 50
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+FONT 10, "Times New Roman"
+BEGIN
+    PUSHBUTTON      "EXIT",IDCANCEL,217,7,54,36
+    LTEXT           "Static",IDC_STATIC_1,7,7,54,36,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "OK",IDOK,141,7,54,36
+END
+
+IDD_DLG_NUMWS DIALOG DISCARDABLE  0, 0, 138, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "进入检测工位设置界面",IDOK,12,30,50,25,BS_MULTILINE
+    PUSHBUTTON      "直接退出",IDCANCEL,76,30,50,25
+    EDITTEXT        IDC_EDIT_NUMWS,100,12,31,12,ES_AUTOHSCROLL
+    LTEXT           "输入工位个数：",IDC_STATIC_1,7,14,89,8
+END
+
+IDD_DLG_PARKOUR DIALOG DISCARDABLE  0, 0, 187, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "开始",IDOK,110,18,50,38
+    PUSHBUTTON      "返回",IDCANCEL,110,77,50,38
+    EDITTEXT        IDC_EDIT_INTERVAL,61,14,26,12,ES_AUTOHSCROLL
+    LTEXT           "时间间隔",IDC_STATIC_1,14,16,46,8
+    CONTROL         "从选中的文件开始",IDC_CHECK_FROMSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,32,94,10
+    CONTROL         "无限循环检测",IDC_CHECK_LOOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,48,64,10
+    CONTROL         "遇到错图停止",IDC_CHECK_STOPBAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,64,64,10
+    CONTROL         "遇到好图停止",IDC_CHECK_STOPGOOD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,80,64,10
+    CONTROL         "遇到异常图停止",IDC_CHECK_STOPEXP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,96,94,10
+    CONTROL         "遇到空图停止",IDC_CHECK_STOPEMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,112,64,10
+    LTEXT           "ms",IDC_STATIC,90,16,11,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,16,2,4
+ PRODUCTVERSION 4,16,2,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "北京大恒图像视觉有限公司\0"
+            VALUE "FileDescription", "离线分析调试工具\0"
+            VALUE "FileVersion", "4, 16, 2, 4\0"
+            VALUE "InternalName", "DemoProject\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DemoProject.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DemoProject 应用程序\0"
+            VALUE "ProductVersion", "4, 16, 2, 4\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DLG_EXIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+    END
+
+    IDD_DLG_NEWMODEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DLG_LANGUAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_DLG_INSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_DLG_NUMWS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DLG_PARKOUR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP  DISCARDABLE     "res\\wozuinb.bmp"
+IDB_BITMAP_DH           BITMAP  DISCARDABLE     "res\\dh70.bmp"
+IDB_BITMAP_CAMERA       BITMAP  DISCARDABLE     "res\\223.bmp"
+IDB_BITMAP_CAMERA2      BITMAP  DISCARDABLE     "res\\timg.bmp"
+IDB_BITMAP_DEMOLOGO     BITMAP  DISCARDABLE     "res\\timgSamll.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+IDR_242                 24      DISCARDABLE     "res\\XPStyle.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_INFO         "中文"
+    IDS_STRING_TITLE        "模板设置与管理程序"
+    IDS_STRING_FONT         "幼圆"
+    IDS_STRING_MDLLIST      "模板列表"
+    IDS_STRING_FILEBACK     "本地图像浏览器"
+    IDS_STRING_GRABIMG      "定位到连续图像"
+    IDS_STRING_ERRIMG       "定位到错误图像"
+    IDS_STRING_CAPIMG       "定位到有产品图像"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_CLEAR        "清空"
+    IDS_STRING_NEWMDL1      "新建模板"
+    IDS_STRING_NEWMDL2      "输入新模板名称"
+    IDS_STRING_DELETE       "删除模板"
+    IDS_STRING_SETD         "设为默认"
+    IDS_STRING_SINGLESAVE   "保存当前路模板"
+    IDS_STRING_SAVE         "保存模板"
+    IDS_STRING_EXIT         "退出"
+    IDS_STRING_LOAD         "加载当前模板"
+    IDS_STRING_CREATE       "创建模板"
+    IDS_STRING_FILE         "图像列表"
+    IDS_STRING_ABOUT        "关于 Demo(&A)..."
+    IDS_STRING_ENDDRAW      "请先结束画图再继续执行"
+    IDS_STRING_LOADING      "加载中..."
+    IDS_STRING_DONELOAD     "保存成功！加载中..."
+    IDS_STRING_SAVEWAIT     "保存中，请稍后..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_SAVEDONE     "保存成功"
+    IDS_STRING_SAVESUCC     "保存成功"
+    IDS_STRING_SAVEFAIL     "保存失败"
+    IDS_STRING_LOADSUC      "加载模板成功"
+    IDS_STRING_LOADSUC1     "加载模板成功"
+    IDS_STRING_LOADFAIL     "加载失败"
+    IDS_STRING_INPUTNEWNAME "请输入新模板名称"
+    IDS_STRING_MDLNAMELONG  "输入名称过长"
+    IDS_STRING_MDLEXIST     "该模板已存在"
+    IDS_STRING_CRTSUC       "创建新模板成功"
+    IDS_STRING_CRTFAIL      "创建新模板失败"
+    IDS_STRING_COPYFAIL     "创建文件夹失败"
+    IDS_STRING_UNSETDLL     "未设置检测对象"
+    IDS_STRING_UNSETOBJNUM  "工位个数小于0"
+    IDS_STRING_UNSETOBJNUM2 "无效的检测对象\r\n请重新选择检测动态库"
+    IDS_STRING_OBJNUML10    "无效的检测对象\r\n请重新选择检测动态库"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_CRTOBJFAIL   "创建对象失败\r\n请重新选择检测动态库"
+    IDS_STRING_LOADFUNCFAIL "加载函数失败\r\n请重新选择检测动态库"
+    IDS_STRING_EXIT_LANDE1  "加载并退出"
+    IDS_STRING_EXIT_LANDE2  "保存并退出"
+    IDS_STRING_EXIT_EXIT    "直接退出"
+    IDS_STRING_EXIT_CANCEL  "取消"
+    IDS_STRING_NM           "请输入初始模板名称"
+    IDS_STRING_CANTSYS      "不能删除系统模板\r\n请先切换模板"
+    IDS_STRING_CANTUSE      "不能删除正在使用的模板\r\n请先切换模板"
+    IDS_STRING_CANTFINDMDL  "找不到该模板"
+    IDS_STRING_SUCDEL       "删除模板成功"
+    IDS_STRING_LANGUAGE     "语言设置(&L)..."
+    IDS_STRING_LANGSEL      "语言设置工具"
+    IDS_STRING_UNSETTED     "未设置"
+    IDS_STRING_CONFIRM      "确定"
+    IDS_STRING_INPUTNUMWS   "输入工位个数："
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRIN_SETINSPOBJ    "进入检测工位设置界面"
+    IDS_STRING_PARKOUR      "一键检测"
+    IDS_STRING_INTERVAL     "时间间隔"
+    IDS_STRING_FROMSEL      "从选中的文件开始"
+    IDS_STRING_ENDLESSRUN   "无限循环检测"
+    IDS_STRING_BADSTOP      "遇到错图停止"
+    IDS_STRING_GOODSTOP     "遇到好图停止"
+    IDS_STRING_EXPSTOP      "遇到异常图停止"
+    IDS_STRING_EMPSTOP      "遇到空图停止"
+    IDS_STRING_START        "开始"
+    IDS_STRING_STOP         "停止"
+    IDS_STRING_INITIALIZE   "初始化中 请稍后....."
+    IDS_STRING_STOPPERTYPECHANGE "DEMO即将重启，是否保存当前模板？"
+    IDS_STRING_STOPPERTYPE  "类型"
+    IDS_STRING_5070         "锁定窗口大小"
+    IDS_STRING_5071         "锁定窗口大小"
+	IDS_STRING_APPNAME      "大输液标签检测系统"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DemoProject.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

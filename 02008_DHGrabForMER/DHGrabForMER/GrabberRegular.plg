@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GrabberRegular - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/GrabberRegular.res" /d "_DEBUG" /d "_AFXDLL" "E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\GrabberRegular.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE198.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../Inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Debug/" /Fp"Debug/GrabberRegular.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp"
+"E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\DHGrabberForMER.cpp"
+"E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\GrabberRegular.cpp"
+"E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\SetParamDialog.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE198.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE199.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../Inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Debug/" /Fp"Debug/GrabberRegular.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE199.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE19A.tmp" with contents
+[
+GxIAPI.lib DxImageProc.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/DHGrabberForMER.pdb" /debug /machine:I386 /def:".\GrabberRegular.def" /out:"E:\2-Run目录管理\Run-采血管\DHGrabberForMER.dll" /implib:"Debug/DHGrabberForMER.lib" /pdbtype:sept /libpath:"..\Lib32" 
+".\Debug\CameraBase.obj"
+".\Debug\DHGrabberForMER.obj"
+".\Debug\GrabberRegular.obj"
+".\Debug\SetParamDialog.obj"
+".\Debug\StdAfx.obj"
+".\Debug\GrabberRegular.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE19A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CameraBase.cpp
+E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp(353) : warning C4101: 'dtemp' : unreferenced local variable
+E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp(504) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp(506) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp(508) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp(510) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\1-程序相关\采血管-北京\20170413\水星Gige-20170324\Src\CameraBase.cpp(511) : warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+DHGrabberForMER.cpp
+GrabberRegular.cpp
+SetParamDialog.cpp
+Generating Code...
+Linking...
+   Creating library Debug/DHGrabberForMER.lib and object Debug/DHGrabberForMER.exp
+
+
+
+<h3>Results</h3>
+DHGrabberForMER.dll - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

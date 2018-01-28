@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AVTGrabber - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"../Debug/AVTGrabber.res" /d "_DEBUG" /d "_AFXDLL" "D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\AVTGrabber.rc"" 
+Creating temporary file "D:\temp\Temp\RSPCF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"../Debug/" /Fp"../Debug/AVTGrabber.pch" /Yu"stdafx.h" /Fo"../Debug/" /Fd"../Debug/" /FD /GZ /c 
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\AVTCamDH.cpp"
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\AVTGrabber.cpp"
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\DHGrabberForAVT.cpp"
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\Login.cpp"
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\PSW.cpp"
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\SetCameraParam.cpp"
+]
+Creating command line "cl.exe @D:\temp\Temp\RSPCF.tmp" 
+Creating temporary file "D:\temp\Temp\RSPD0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"../Debug/" /Fp"../Debug/AVTGrabber.pch" /Yc"stdafx.h" /Fo"../Debug/" /Fd"../Debug/" /FD /GZ /c 
+"D:\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Src\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\Temp\RSPD0.tmp" 
+Creating temporary file "D:\temp\Temp\RSPD1.tmp" with contents
+[
+fgcamera.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"../Debug/DHGrabberForAVT.pdb" /debug /machine:I386 /def:".\AVTGrabber.def" /out:"..\Run\DHGrabberForAVT.dll" /implib:"../Debug/DHGrabberForAVT.lib" /pdbtype:sept /libpath:"../lib" 
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\AVTCamDH.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\AVTGrabber.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\DHGrabberForAVT.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\Login.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\PSW.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\SetCameraParam.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\StdAfx.obj"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\AVTGrabber.res"
+]
+Creating command line "link.exe @D:\temp\Temp\RSPD1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AVTCamDH.cpp
+AVTGrabber.cpp
+DHGrabberForAVT.cpp
+Login.cpp
+PSW.cpp
+SetCameraParam.cpp
+Generating Code...
+Linking...
+   Creating library ../Debug/DHGrabberForAVT.lib and object ../Debug/DHGrabberForAVT.exp
+Creating temporary file "D:\temp\Temp\RSPD5.tmp" with contents
+[
+/nologo /o"../Debug/AVTGrabber.bsc" 
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\StdAfx.sbr"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\AVTCamDH.sbr"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\AVTGrabber.sbr"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\DHGrabberForAVT.sbr"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\Login.sbr"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\PSW.sbr"
+"\00_work\视觉系统部资源\采集卡\AVT\20120801\AVTGrabberDll_6.0.0.1beta4-firepackage3-vc6\Debug\SetCameraParam.sbr"]
+Creating command line "bscmake.exe @D:\temp\Temp\RSPD5.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DHGrabberForAVT.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

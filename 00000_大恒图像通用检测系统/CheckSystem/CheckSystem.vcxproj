@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CF1A0980-2502-4B44-9D80-47520929AABA}</ProjectGuid>
+    <RootNamespace>CheckSystem</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>大恒图像通用检测系统</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\bin\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Debug</IntDir>
+    <TargetName>$(TargetName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Debug</IntDir>
+    <TargetName>$(TargetName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\bin\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Release</IntDir>
+    <TargetName>$(TargetName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\inc;..\..\incPublic</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xcgui.lib;ThreeTierRightsD.lib;ObjectAllocationD.lib;DxImageProc.lib;DHGrabForSGD.lib;DHGrabForAVTD.lib;DHGrabForBaumerD.lib;DHGrabForJAID.lib;DHGrabForMERD.lib;DHPropGridCtrlD.lib;DHIOCardForSGD.lib;DHIOCardForPIO24CD.lib;DHIOCardForPCI6356D.lib;DHIOCardForRS232_XZXNYND.lib</AdditionalDependencies>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\inc;..\..\incPublic</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xcgui.lib;DxImageProc.lib;ObjectAllocation.lib;DHGrabForSG.lib;DHGrabForAVT.lib;DHGrabForBaumer.lib;DHGrabForJAI.lib;DHGrabForMER.lib;DHPropGridCtrl.lib;DHIOCardForSG.lib;DHIOCardForPIO24C.lib;DHIOCardForPCI6356.lib;DHIOCardForRS232_XZXNYN.lib;ThreeTierRights.lib</AdditionalDependencies>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IncPublic\alg_struct.h" />
+    <ClInclude Include="..\..\IncPublic\alg_struct_demo.h" />
+    <ClInclude Include="..\..\IncPublic\alg_struct_general.h" />
+    <ClInclude Include="..\..\IncPublic\alg_struct_Label.h" />
+    <ClInclude Include="..\..\IncPublic\alg_struct_lampInsp.h" />
+    <ClInclude Include="..\..\IncPublic\alg_struct_stopper.h" />
+    <ClInclude Include="..\..\IncPublic\ExFn.h" />
+    <ClInclude Include="..\..\IncPublic\ExtenInfo.h" />
+    <ClInclude Include="..\..\IncPublic\Grabber.h" />
+    <ClInclude Include="..\..\IncPublic\Markup.h" />
+    <ClInclude Include="..\inc\AutoFont.h" />
+    <ClInclude Include="..\inc\CreateCustomModel.h" />
+    <ClInclude Include="..\inc\DHGrabberForMER.h" />
+    <ClInclude Include="..\inc\DHGrabForAVT.h" />
+    <ClInclude Include="..\inc\DHGrabForBaumer.h" />
+    <ClInclude Include="..\inc\DHGrabForMER.h" />
+    <ClInclude Include="..\inc\DHGrabForSG.h" />
+    <ClInclude Include="..\inc\DHIOCardForRS232_XZXNYN.h" />
+    <ClInclude Include="..\inc\DHIOCardForSG.h" />
+    <ClInclude Include="..\inc\DxImageProc.h" />
+    <ClInclude Include="..\inc\GxIAPI.h" />
+    <ClInclude Include="..\inc\ParamDefine.h" />
+    <ClInclude Include="..\inc\PluginSignalControl.h" />
+    <ClInclude Include="..\inc\StaticFader.h" />
+    <ClInclude Include="..\inc\SystemMacro.h" />
+    <ClInclude Include="..\inc\xShadeButton.h" />
+    <ClInclude Include="BarChart.h" />
+    <ClInclude Include="DlgCopyModel.h" />
+    <ClInclude Include="DlgBtnCtrlGroup.h" />
+    <ClInclude Include="DlgDataStatistics.h" />
+    <ClInclude Include="DlgDefectStatistics.h" />
+    <ClInclude Include="DlgHisErrorInfo.h" />
+    <ClInclude Include="DlgParamSet.h" />
+    <ClInclude Include="DlgRunning.h" />
+    <ClInclude Include="DlgSetting.h" />
+    <ClInclude Include="DlgSwitchModel.h" />
+    <ClInclude Include="ImageHandle.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="resourceOfPerson.h" />
+    <ClInclude Include="resourceOfXC.h" />
+    <ClInclude Include="SettingView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="XCCtrlBtnBar.h" />
+    <ClInclude Include="xcgui.h" />
+    <ClInclude Include="CheckSystem.h" />
+    <ClInclude Include="CheckSystemDoc.h" />
+    <ClInclude Include="CheckSystemView.h" />
+    <ClInclude Include="XCStatusInfoBar.h" />
+    <ClInclude Include="XCTitleBar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\IncPublic\ExFn.cpp" />
+    <ClCompile Include="..\..\IncPublic\ExtenInfo.cpp" />
+    <ClCompile Include="..\..\IncPublic\Markup.cpp" />
+    <ClCompile Include="..\inc\AutoFont.cpp" />
+    <ClCompile Include="..\inc\BtnST.cpp" />
+    <ClCompile Include="..\inc\StaticFader.cpp" />
+    <ClCompile Include="..\inc\xShadeButton.cpp" />
+    <ClCompile Include="BarChart.cpp" />
+    <ClCompile Include="DlgCopyModel.cpp" />
+    <ClCompile Include="DlgBtnCtrlGroup.cpp" />
+    <ClCompile Include="DlgDataStatistics.cpp" />
+    <ClCompile Include="DlgDefectStatistics.cpp" />
+    <ClCompile Include="DlgHisErrorInfo.cpp" />
+    <ClCompile Include="DlgParamSet.cpp" />
+    <ClCompile Include="DlgRunning.cpp" />
+    <ClCompile Include="DlgSetting.cpp" />
+    <ClCompile Include="DlgSwitchModel.cpp" />
+    <ClCompile Include="ImageHandle.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="SettingView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CheckSystem.cpp" />
+    <ClCompile Include="CheckSystemDoc.cpp" />
+    <ClCompile Include="CheckSystemView.cpp" />
+    <ClCompile Include="XCCtrlBtnBar.cpp" />
+    <ClCompile Include="XCStatusInfoBar.cpp" />
+    <ClCompile Include="XCTitleBar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CheckSystem.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CheckSystem.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CheckSystem.ico" />
+    <Image Include="res\CheckSystemDoc.ico" />
+    <Image Include="res\Company.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{D08A6918-BA1A-4695-9B82-BAE293C20F56}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>山东瑞阳扎盖一期</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Debug</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Release</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)\BottleCap.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation>true</BrowseInformation>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\BottleCap.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)\BottleCap.bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Lib;..\Lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DHProgramLicense.lib;ObjectAllocationD.lib;PIO24B_DLL.lib;DHGrabberForSG.lib;Raw2Rgb.lib;DHGrabberForMER.lib;xcgui.lib;IOCard.lib;ExtenInfoD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)\BottleCap.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\BottleCap.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)\Release\BottleCap.bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Lib;..\Lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DHProgramLicense.lib;ObjectAllocation.lib;PIO24B_DLL.lib;DHGrabberForSG.lib;Raw2Rgb.lib;DHGrabberForMER.lib;xcgui.lib;IOCard.lib;ExtenInfo.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\IncPublic\ExFn.cpp" />
+    <ClCompile Include="..\..\IncPublic\Markup.cpp" />
+    <ClCompile Include="AutoFont.cpp" />
+    <ClCompile Include="BottleCap.cpp" />
+    <ClCompile Include="BottleCapDoc.cpp" />
+    <ClCompile Include="BottleCapView.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="DlgAddUser.cpp" />
+    <ClCompile Include="DlgAlarm.cpp" />
+    <ClCompile Include="DlgAlarmPos.cpp" />
+    <ClCompile Include="DlgAlarmStopCount.cpp" />
+    <ClCompile Include="DlgCamTest.cpp" />
+    <ClCompile Include="DlgDefect.cpp" />
+    <ClCompile Include="DlgDefectPage1.cpp" />
+    <ClCompile Include="DlgDefectPage2.cpp" />
+    <ClCompile Include="DlgLogin.cpp" />
+    <ClCompile Include="DlgModifyCipher.cpp" />
+    <ClCompile Include="DlgNewModel.cpp" />
+    <ClCompile Include="DlgPage1.cpp" />
+    <ClCompile Include="DlgPage2.cpp" />
+    <ClCompile Include="DlgSaveImage.cpp" />
+    <ClCompile Include="DlgSelectProduct.cpp" />
+    <ClCompile Include="DlgSetCipher.cpp" />
+    <ClCompile Include="DlgShowImage.cpp" />
+    <ClCompile Include="DlgStatistic.cpp" />
+    <ClCompile Include="DlgSystemConfig.cpp" />
+    <ClCompile Include="DlgTestCipher.cpp" />
+    <ClCompile Include="DlgUserAdm.cpp" />
+    <ClCompile Include="FileOperate.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="StaticFader.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="xShadeButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BottleCap.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IncPublic\ExtenInfo.h" />
+    <ClInclude Include="..\..\IncPublic\IoCard.h" />
+    <ClInclude Include="..\incPublic\MultiObjectDef.h" />
+    <ClInclude Include="..\Inc\DHAlgInterface.h" />
+    <ClInclude Include="..\Inc\ObjAlloc.h" />
+    <ClInclude Include="AutoFont.h" />
+    <ClInclude Include="BottleCap.h" />
+    <ClInclude Include="BottleCapDoc.h" />
+    <ClInclude Include="BottleCapView.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="DlgAddUser.h" />
+    <ClInclude Include="DlgAlarm.h" />
+    <ClInclude Include="DlgAlarmPos.h" />
+    <ClInclude Include="DlgAlarmStopCount.h" />
+    <ClInclude Include="DlgCamTest.h" />
+    <ClInclude Include="DlgDefect.h" />
+    <ClInclude Include="DlgDefectPage1.h" />
+    <ClInclude Include="DlgDefectPage2.h" />
+    <ClInclude Include="DlgLogin.h" />
+    <ClInclude Include="DlgModifyCipher.h" />
+    <ClInclude Include="DlgNewModel.h" />
+    <ClInclude Include="DlgPage1.h" />
+    <ClInclude Include="DlgPage2.h" />
+    <ClInclude Include="DlgSaveImage.h" />
+    <ClInclude Include="DlgSelectProduct.h" />
+    <ClInclude Include="DlgSetCipher.h" />
+    <ClInclude Include="DlgShowImage.h" />
+    <ClInclude Include="DlgStatistic.h" />
+    <ClInclude Include="DlgSystemConfig.h" />
+    <ClInclude Include="DlgTestCipher.h" />
+    <ClInclude Include="DlgUserAdm.h" />
+    <ClInclude Include="FileOperate.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Kick_Good3.h" />
+    <ClInclude Include="LogManager.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SpendTime.h" />
+    <ClInclude Include="StaticFader.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="xShadeButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Alarm.ico" />
+    <Image Include="res\Bottle.ico" />
+    <Image Include="res\BottleCap.ico" />
+    <Image Include="res\BottleCapDoc.ico" />
+    <Image Include="res\Company.bmp" />
+    <Image Include="res\Company.ico" />
+    <Image Include="res\MP.ico" />
+    <Image Include="res\MP1.ico" />
+    <Image Include="res\New_Clear.ico" />
+    <Image Include="res\New_Defect_Statistics.ico" />
+    <Image Include="res\New_Info.ico" />
+    <Image Include="res\New_Model.ico" />
+    <Image Include="res\New_Param.ico" />
+    <Image Include="res\New_Quit.ico" />
+    <Image Include="res\New_Record.ico" />
+    <Image Include="res\New_Setting.ico" />
+    <Image Include="res\New_Start.ico" />
+    <Image Include="res\New_Statistic.ico" />
+    <Image Include="res\New_Stop.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\BottleCap.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ModifyLog.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

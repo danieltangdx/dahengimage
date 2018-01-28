@@ -1,0 +1,6 @@
+; CreateCustomModel.def : Declares the module parameters for the DLL.
+
+LIBRARY "CreateCustomModelD"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,276 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DaHengListBox.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2017,9,17,1
+ PRODUCTVERSION 4,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "增加对灯检机图片文件夹支持"
+            VALUE "CompanyName", "北京大恒图像视觉有限公司"
+            VALUE "FileDescription", "DaHengListBox DLL"
+            VALUE "FileVersion", "2017.9.17.1"
+            VALUE "InternalName", "DaHengListBox"
+            VALUE "LegalCopyright", "版权所有 (C) 2015"
+            VALUE "OriginalFilename", "DaHengListBox.DLL"
+            VALUE "ProductName", "DaHengListBox Dynamic Link Library"
+            VALUE "ProductVersion", "4.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_YES            ICON                    "icon1.ico"
+
+IDI_ICON_NO             ICON                    "ico00001.ico"
+
+IDI_ICON_NULL           ICON                    "ico00002.ico"
+
+IDI_ICON_EXP            ICON                    "ico00003.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RCMENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "打开图像",                        ID_MENU_OPENIMAGE
+        MENUITEM "删除图像",                        ID_MENU_DELETEIMAGE
+        MENUITEM "刷新当前路径",                      ID_MENU_REFRESH
+    END
+END
+
+IDR_ENTERMENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "进入",                          ID_MENU_DENTER
+        MENUITEM "刷新路径",                        ID_MENU_DREFRESH
+    END
+END
+
+IDR_REFRESHMENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "刷新路径",                        ID_MENU_UREFRESH
+    END
+END
+
+IDR_MODELMENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "使用模板",                        ID_MENU_APPLY
+        MENUITEM "重命名",                         ID_MENU_RENAME
+        MENUITEM "删除模板",                        ID_MENU_DELETEMODEL
+        MENUITEM "打开文件夹",                       ID_MENU_OPENMODEL
+    END
+END
+
+IDR_MENU_MODEL2 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "刷新模板",                        ID_MENU_REFRESH
+        MENUITEM "打开文件夹",                       ID_MENU_OPENMODELDIR
+    END
+END
+
+IDR_ENTERMENU_EN MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Enter",                       ID_MENU_DENTER
+        MENUITEM "Refresh",                     ID_MENU_DREFRESH
+    END
+END
+
+IDR_REFRESHMENU_EN MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Refresh",                     ID_MENU_UREFRESH
+    END
+END
+
+IDR_RCMENU_EN MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Open",                        ID_MENU_OPENIMAGE
+        MENUITEM "Delete",                      ID_MENU_DELETEIMAGE
+        MENUITEM "Refresh",                     ID_MENU_REFRESH
+    END
+END
+
+IDR_MODELMENU_EN MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Apply",                       ID_MENU_APPLY
+        MENUITEM "Rename",                      ID_MENU_RENAME
+        MENUITEM "Delete",                      ID_MENU_DELETEMODEL
+        MENUITEM "Open Folder",                 ID_MENU_OPENMODEL
+    END
+END
+
+IDR_MENU_MODEL2_EN MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Refresh",                     ID_MENU_REFRESH
+        MENUITEM "Open Folder",                 ID_MENU_OPENMODELDIR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_RENAME DIALOGEX 0, 0, 96, 63
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 12, "幼圆", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_MSG,5,6,82,12
+    EDITTEXT        IDC_EDIT_NEWNAME,5,20,82,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BTN_OK,9,35,23,14
+    PUSHBUTTON      "取消",IDC_BTN_NOK,58,35,23,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BMP          BITMAP                  "bmp.bmp"
+
+IDB_BITMAP_FOLDER       BITMAP                  "shell32.dll_3_-1.bmp"
+
+IDB_BITMAP_FLOPPY       BITMAP                  "shell32.dll_6_-1.bmp"
+
+IDB_BITMAP_HARD         BITMAP                  "shell32.dll_8_-1.bmp"
+
+IDB_BITMAP_CD           BITMAP                  "shell32.dll_11_-1.bmp"
+
+IDB_BITMAP_MODEL        BITMAP                  "shell32.dll_36_-1.bmp"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DaHengListBox.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,3 @@
+4.0.15.630
+加入了 get_window_num()函数
+取消了afxoleinit函数

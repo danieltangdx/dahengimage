@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{19253E79-C740-4994-A50F-41DEAB0BC2EF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>积水医疗采血管检测系统</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Release</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\bin</OutDir>
+    <IntDir>..\..\..\obj\$(TargetName)\Debug</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)DS</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)\TubeCheck.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\Inc;</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\TubeCheck.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)\TubeCheck.bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\lib;..\..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DHProgramLicense.lib;ObjectAllocation.lib;PIO24B_DLL.lib;DHGrabberForAVT.lib;DHGrabberForSG.lib;Raw2Rgb.lib;DHGrabberForMER.lib;xcgui.lib;ThreeTierRights.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)\TubeCheck.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\TubeCheck.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)\TubeCheck.bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\lib;..\..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DHProgramLicense.lib;ObjectAllocationD.lib;PIO24B_DLL.lib;DHGrabberForSG.lib;Raw2Rgb.lib;DHGrabberForMER.lib;xcgui.lib;ThreeTierRightsD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\IncPublic\ExFn.cpp" />
+    <ClCompile Include="..\..\IncPublic\ExtenInfo.cpp" />
+    <ClCompile Include="..\..\IncPublic\IDS.cpp" />
+    <ClCompile Include="..\..\IncPublic\Markup.cpp" />
+    <ClCompile Include="AutoFont.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="DlgAlarm.cpp" />
+    <ClCompile Include="DlgAlarmPos.cpp" />
+    <ClCompile Include="DlgAlarmStopCount.cpp" />
+    <ClCompile Include="DlgCamTest.cpp" />
+    <ClCompile Include="DlgDefect.cpp" />
+    <ClCompile Include="DlgDefectPage1.cpp" />
+    <ClCompile Include="DlgDefectPage2.cpp" />
+    <ClCompile Include="DlgIOCard.cpp" />
+    <ClCompile Include="DlgNewModel.cpp" />
+    <ClCompile Include="DlgPage1.cpp" />
+    <ClCompile Include="DlgPage2.cpp" />
+    <ClCompile Include="DlgSaveImage.cpp" />
+    <ClCompile Include="DlgSelectProduct.cpp" />
+    <ClCompile Include="DlgShowImage.cpp" />
+    <ClCompile Include="DlgStatistic.cpp" />
+    <ClCompile Include="DlgSystemConfig.cpp" />
+    <ClCompile Include="DlgTestCipher.cpp" />
+    <ClCompile Include="FileOperate.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="StaticFader.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TubeCheck.cpp" />
+    <ClCompile Include="TubeCheckDoc.cpp" />
+    <ClCompile Include="TubeCheckView.cpp" />
+    <ClCompile Include="XDlgSysCfg.cpp" />
+    <ClCompile Include="xShadeButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TubeCheck.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IncPublic\ExFn.h" />
+    <ClInclude Include="..\..\IncPublic\IDS.h" />
+    <ClInclude Include="AutoFont.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="DlgAlarm.h" />
+    <ClInclude Include="DlgAlarmPos.h" />
+    <ClInclude Include="DlgAlarmStopCount.h" />
+    <ClInclude Include="DlgCamTest.h" />
+    <ClInclude Include="DlgDefect.h" />
+    <ClInclude Include="DlgDefectPage1.h" />
+    <ClInclude Include="DlgDefectPage2.h" />
+    <ClInclude Include="DlgIOCard.h" />
+    <ClInclude Include="DlgNewModel.h" />
+    <ClInclude Include="DlgPage1.h" />
+    <ClInclude Include="DlgPage2.h" />
+    <ClInclude Include="DlgSaveImage.h" />
+    <ClInclude Include="DlgSelectProduct.h" />
+    <ClInclude Include="DlgShowImage.h" />
+    <ClInclude Include="DlgStatistic.h" />
+    <ClInclude Include="DlgSystemConfig.h" />
+    <ClInclude Include="DlgTestCipher.h" />
+    <ClInclude Include="FileOperate.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="LogManager.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="PersonResource.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SpendTime.h" />
+    <ClInclude Include="StaticFader.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TubeCheck.h" />
+    <ClInclude Include="TubeCheckDoc.h" />
+    <ClInclude Include="TubeCheckView.h" />
+    <ClInclude Include="XDlgSysCfg.h" />
+    <ClInclude Include="xShadeButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Alarm.ico" />
+    <Image Include="res\Bottle.ico" />
+    <Image Include="res\Company.bmp" />
+    <Image Include="res\Company.ico" />
+    <Image Include="res\MP.ico" />
+    <Image Include="res\MP1.ico" />
+    <Image Include="res\New_Clear.ico" />
+    <Image Include="res\New_Defect_Statistics.ico" />
+    <Image Include="res\New_Info.ico" />
+    <Image Include="res\New_Model.ico" />
+    <Image Include="res\New_Param.ico" />
+    <Image Include="res\New_Quit.ico" />
+    <Image Include="res\New_Record.ico" />
+    <Image Include="res\New_Setting.ico" />
+    <Image Include="res\New_Start.ico" />
+    <Image Include="res\New_Statistic.ico" />
+    <Image Include="res\New_Stop.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\TubeCheck.ico" />
+    <Image Include="res\TubeCheckDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\TubeCheck.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ModifyLog.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

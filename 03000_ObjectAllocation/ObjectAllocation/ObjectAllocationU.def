@@ -1,0 +1,7 @@
+; ObjectAllocation.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ObjectAllocation"
+DESCRIPTION  'ObjectAllocation Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,6 @@
+; GrabberRegularForSG.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DHGrabForSGD"
+DESCRIPTION  'GrabberRegularForSG Windows Dynamic Link Library'
+
+EXPORTS

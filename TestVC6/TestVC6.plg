@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestVC6 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/TestVC6.res" /d "_DEBUG" /d "_AFXDLL" "S:\Projects\DahengProjects\11_CheckSystem\src\TestVC6\TestVC6.rc"" 
+Creating temporary file "C:\Users\27052\AppData\Local\Temp\RSPB9A0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/TestVC6.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"S:\Projects\DahengProjects\11_CheckSystem\src\TestVC6\TestVC6.cpp"
+"S:\Projects\DahengProjects\11_CheckSystem\src\TestVC6\TestVC6Dlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\27052\AppData\Local\Temp\RSPB9A0.tmp" 
+Creating temporary file "C:\Users\27052\AppData\Local\Temp\RSPB9A1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/TestVC6.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"S:\Projects\DahengProjects\11_CheckSystem\src\TestVC6\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\27052\AppData\Local\Temp\RSPB9A1.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/TestVC6.pdb" /debug /machine:I386 /out:"Debug/TestVC6.exe" /pdbtype:sept  .\Debug\StdAfx.obj .\Debug\TestVC6.obj .\Debug\TestVC6Dlg.obj .\Debug\TestVC6.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+TestVC6.cpp
+TestVC6Dlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/TestVC6.bsc"  .\Debug\StdAfx.sbr .\Debug\TestVC6.sbr .\Debug\TestVC6Dlg.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TestVC6.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

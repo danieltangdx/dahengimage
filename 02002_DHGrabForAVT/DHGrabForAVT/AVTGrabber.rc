@@ -1,0 +1,274 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AVTGrabber.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,0,0,7
+ PRODUCTVERSION 6,0,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "结合V3_1驱动编译;英文版本"
+            VALUE "CompanyName", "北京大恒图像视觉有限公司"
+            VALUE "FileDescription", "AVT 相机采集动态库"
+            VALUE "FileVersion", "6.0.0.7"
+            VALUE "InternalName", "AVTGrabber"
+            VALUE "LegalCopyright", "版权所有 (C) 2014"
+            VALUE "LegalTrademarks", "大恒图像"
+            VALUE "OriginalFilename", "DHGrabberForAVT.DLL"
+            VALUE "ProductName", "AVT相机采集动态库"
+            VALUE "ProductVersion", "6.0.0.7"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SET_CAMERA_DIALOG DIALOGEX 0, 0, 171, 275
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "相机参数设置"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "亮度:",IDC_STATIC_LIGHT,21,22,19,8
+    LTEXT           "增益:",IDC_STATIC_GAIN,21,41,19,8
+    LTEXT           "曝光:",IDC_STATIC_SHUTTER,21,60,19,8
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,41,22,85,8
+    EDITTEXT        IDC_EDIT_BRIGHTNESS,128,19,24,13,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,41,41,85,8
+    CONTROL         "Slider1",IDC_SLIDER_SHUTTER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,41,60,85,8
+    EDITTEXT        IDC_EDIT_GAIN,128,38,24,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHUTTER,128,57,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出",IDOK,112,252,52,14
+    GROUPBOX        "相机参数",IDC_STATIC_CAMERA_PARAM,11,7,152,74
+    GROUPBOX        "触发模式",IDC_STATIC_TRIGGER_MODE,11,86,152,32
+    COMBOBOX        IDC_COMBO_TRIGGER_MODE,39,98,96,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "保存参数",IDC_BTN_APPLY,58,252,52,14
+    GROUPBOX        "AOI设置",IDC_STATIC_AOI_PARAM,11,122,152,62
+    LTEXT           "左边",IDC_STATIC_LEFT,17,135,16,10
+    LTEXT           "宽度",IDC_STATIC_WIDTH,97,135,16,10
+    LTEXT           "上边",IDC_STATIC_TOP,17,151,16,10
+    LTEXT           "高度",IDC_STATIC_HEIGHT,97,151,16,10
+    EDITTEXT        IDC_EDIT_AOI_LEFT,40,135,36,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_AOI_WIDTH,121,135,36,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_AOI_TOP,40,151,36,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_AOI_HEIGHT,121,151,36,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "应用",IDC_BUTTON_AOI_APPLY,127,167,32,12
+    GROUPBOX        "采集帧率测试",IDC_STATIC_FPS_TEST,11,219,152,26
+    CTEXT           "",IDC_STATIC_FRAME,17,228,62,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "开始测试",IDC_BUTTON_FRAMETEST,93,228,34,12
+    CTEXT           "需要停止采集后设置AOI区域",IDC_STATIC_AOI_INFO,18,167,98,12,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "申请权限",IDC_BUTTON_LOGIN,11,252,40,14
+    GROUPBOX        "白平衡",IDC_STATIC_WB,11,186,152,29
+    LTEXT           "CB:",IDC_STATIC,20,198,11,11
+    EDITTEXT        IDC_EDIT_CB,35,195,29,15,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "CR:",IDC_STATIC,72,198,11,11
+    EDITTEXT        IDC_EDIT_CR,88,195,29,15,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "应用",IDC_BUTTON_AOI_APPLYWB,123,196,32,12
+END
+
+IDD_DIALOG_LOGIN DIALOG 0, 0, 141, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入密码"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,7,48,36,15
+    PUSHBUTTON      "退出",IDCANCEL,102,48,36,15
+    LTEXT           "密码",IDC_STATIC,10,14,17,10
+    EDITTEXT        IDC_EDIT_PSW,42,14,50,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_BUTTON_APPLY,102,7,32,13,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "修改密码",IDC_BUTTON_NEWPSW,53,48,36,15
+END
+
+IDD_DIALOG_PSW DIALOG 0, 0, 129, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "修改",IDOK,7,59,50,14
+    PUSHBUTTON      "退出",IDCANCEL,72,59,50,14
+    LTEXT           "旧密码",IDC_STATIC,12,17,25,9
+    LTEXT           "新密码",IDC_STATIC,13,33,25,9
+    EDITTEXT        IDC_EDIT_OLDPSW,53,16,39,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPSW,53,32,39,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SET_CAMERA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG_PSW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SET_CAMERA_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_TRIGGER_MODE, 0x403, 17, 0
+0x6e49, 0x6574, 0x6e72, 0x6c61, 0xc428, 0xb4da, 0xb7a5, 0x29a2, "\000" 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 19, 0
+0xcfc9, 0xfdc9, 0xd8d1, 0xe2cd, 0xa5b4, 0xa2b7, 0x4528, 0x6764, 0x2965, 
+"\000" 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 19, 0
+0xc2cf, 0xb5bd, 0xd8d1, 0xe2cd, 0xa5b4, 0xa2b7, 0x4528, 0x6764, 0x2965, 
+"\000" 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 18, 0
+0xdfb8, 0xe7b5, 0xbdc6, 0xa5b4, 0xa2b7, 0x4c28, 0x7665, 0x6c65, 0x0029, 
+
+    IDC_COMBO_TRIGGER_MODE, 0x403, 20, 0
+0xcdb5, 0xe7b5, 0xbdc6, 0xe2cd, 0xa5b4, 0xa2b7, 0x4c28, 0x7665, 0x6c65, 
+0x0029, 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 24, 0
+0xe0b1, 0xccb3, 0xcfc9, 0xfdc9, 0xd8d1, 0xe2cd, 0xa5b4, 0xa2b7, 0x5028, 
+0x6f72, 0x2e67, 0x0029, 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 24, 0
+0xe0b1, 0xccb3, 0xc2cf, 0xb5bd, 0xd8d1, 0xe2cd, 0xa5b4, 0xa2b7, 0x5028, 
+0x6f72, 0x2e67, 0x0029, 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 15, 0
+0xd8d1, 0xedc8, 0xa5b4, 0xa2b7, 0x4528, 0x6764, 0x2965, "\000" 
+    IDC_COMBO_TRIGGER_MODE, 0x403, 18, 0
+0xe7b5, 0xbdc6, 0xedc8, 0xa5b4, 0xa2b7, 0x4c28, 0x7665, 0x6c65, 0x0029, 
+
+    IDC_COMBO_TRIGGER_MODE, 0x403, 19, 0
+0xe0b1, 0xccb3, 0xedc8, 0xa5b4, 0xa2b7, 0x5028, 0x6f72, 0x7267, 0x292e, 
+"\000" 
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\AVTGrabber.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
